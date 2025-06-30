@@ -41,6 +41,8 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --font-poppins: var(--font-poppins);
+  --font-foundersGrotesk: var(--font-foundersGrotesk);
 }
 
 @media (prefers-color-scheme: light) {
@@ -48,10 +50,6 @@
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
-
-body {
-  font-family: Helvetica, sans-serif;
 }
 
 :root {
@@ -130,4 +128,12 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+}
+
+li{
+  cursor: pointer;
+}
+
+a{
+  cursor: pointer;
 }

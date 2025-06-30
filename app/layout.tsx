@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Poppins } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  variable: "--font-poppins",
+});
 
 const foundersGrotesk = localFont({
+  variable: "--font-foundersGrotesk",
   src: [
     {
       path: "../public/fonts/FoundersGrotesk-Light.otf",
@@ -40,8 +49,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${foundersGrotesk.className} antialiased`}>
+      <body
+        className={`${poppins.variable} ${foundersGrotesk.className} antialiased flex flex-col min-h-screen items-center justify-start`}
+      >
+        <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
