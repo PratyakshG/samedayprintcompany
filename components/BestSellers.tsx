@@ -4,8 +4,8 @@ import ProductCard from "./ProductCard";
 
 const BestSellers = () => {
   return (
-    <section className="py-10 space-y-5">
-      <h1 className="font-medium text-5xl text-center">
+    <section className="p-10 space-y-5">
+      <h1 className="font-semibold text-5xl text-center">
         Best Selling Products
       </h1>
 

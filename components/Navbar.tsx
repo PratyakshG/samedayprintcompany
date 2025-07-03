@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <ul className="flex items-center justify-start gap-5 px-10">
+      <ul className="flex items-center justify-start gap-8 px-10">
         {navList.map((item, _) => (
           <li key={_}>{item}</li>
         ))}

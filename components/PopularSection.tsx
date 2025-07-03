@@ -4,8 +4,8 @@ import ProductCard from "./ProductCard";
 
 const PopularSection = () => {
   return (
-    <section className="py-10 space-y-5">
-      <h1 className="font-medium text-5xl text-center">Popular Products</h1>
+    <section className="p-10 space-y-5">
+      <h1 className="font-semibold text-5xl text-center">Popular Products</h1>
 
       <div className="flex items-center justify-center flex-wrap gap-10">
         {popularProducts.map((item, _) => (

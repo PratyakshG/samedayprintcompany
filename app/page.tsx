@@ -5,11 +5,11 @@ import PopularSection from "@/components/PopularSection";
 
 export default function Home() {
   return (
-    <div className="w-full px-10 py-10">
+    <main className="w-full">
       <HeroSection />
       <PopularSection />
       <BestSellers />
       <Locations />
-    </div>
+    </main>
   );
 }

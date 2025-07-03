@@ -9,7 +9,7 @@ import {
 
 const HeroSection = () => {
   return (
-    <>
+    <section className="p-10">
       <Carousel
         className="h-full"
         opts={{
@@ -27,7 +27,7 @@ const HeroSection = () => {
           <CarouselNext />
         </div>
       </Carousel>
-    </>
+    </section>
   );
 };
 
